@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #C35691;
+    --primary-black: #000;
+    --primary-white: #fff;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.navbar{
+    padding: 20px;
+    margin-right: 5.5em;
+    margin-left: 3.5em;
+}
+.navbar-brand img {
+    height: 56px;
+    width: auto;
+}
+.nav-link {
+    padding: 14px;
+    color: var(--primary-black);
+}
+.nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right {
+    margin-right: -15em; 
+    margin-top: -15em;
+}
+right img {
+
+    max-width: 100%; /* Ensure the image does not overflow */
+
+    height: auto; /* Maintain aspect ratio */
+
+    object-fit: cover; /* Cover the container */
+}
+.left{
+    margin-left: 20px;
+}
+.login h3{
+    font-weight:bold;
+    margin-left: 1.7em;
+    margin-top: 2em;
+}
+
+
+form{
+    margin-top: 4.5em;
+    margin-left: 1em;
+}
+form input{
+    display: block;
+    padding-bottom: 0.5em;
+    margin: 2em;
+    width: calc(175% - 1px);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: var(--primary-color);
+    outline: none;
+    background-color: transparent;
+}
+form input:hover {
+    border-color: var(--primary-color);
+}
+form a{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 3em;
+    font-family: "Inter",sans-serif;
+    font-size: 12px;
+}
+.password-container {
+    position: relative;
+}
+.password-container input {
+    width: calc(175% - 1px);
+}
+#togglePassword {/*password eye*/
+    position: absolute;
+    top: 50%;
+    right: -225px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#fp {      /*forgot password*/
+    position: relative;
+    top: -25px;
+    right: -365px;
+}
+
+.btn{
+    height: 2.5em;
+    width: calc(175% - 1px);
+    border-radius: 7px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--primary-white);
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.btn:hover {
+    background-color: transparent;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.btn:focus,
+.btn:active
+{
+    outline: none; 
+    box-shadow: none;
+}
+ 
+.signuptext{
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+}
+.signuptext a{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 5px;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+}
+.signuptext a:hover{
+    color: var(--primary-black);
+}
+
+
+@media (max-width: 768px) {
+
+
+    .navbar{
+        padding: 10px;
+        margin-right: 2.5em;
+        background-color: var(--primary-white);
+        margin-left: 0em;
+    }
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-toggler-icon {
+        color: var(--primary-black)
+    }
+    .navbar-collapse {
+        padding: 10px;
+    }
+    .nav-link {
+        padding: 10px;
+        color: var(--primary-black);
+    }
+    .nav-link.disabled {
+        pointer-events: none;
+        opacity: 0.6;
+    } 
+
+    .con {
+        display: block;
+        padding: 20px;
+    }
+    .right {
+        display: none
+    }
+    .left {
+        margin-left: 0px;
+        flex: 1;
+    }
+
+    .login h3{
+        margin-left: 0;
+        margin-top: 6em;
+        text-align: center;
+    }
+
+    form{
+    margin-top: 2.5em;
+    margin-left: 0em;
+    }
+    form input{
+        margin: 0em;
+        text-align: left;
+        padding: 0em;
+    }
+    form a{
+        margin: 0.5em auto;
+        text-align: center;
+    }
+
+
+    .password-container input {
+        width: calc(100% - 10px);
+    }
+    #togglePassword {/*password eye*/
+
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    #fp {      /*forgot password*/
+
+        top: -10px;
+        left: 1px;
+    }
+
+    .btn{
+        height: calc(100% - 1px);
+        width: calc(100% - 1px);
+        border-radius: 7px;
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+
+
+    .signuptext{
+        margin-left: 0;
+        text-align: center;
+    }
+}

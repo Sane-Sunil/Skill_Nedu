@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #C35691;
+    --primary-black: #000;
+    --primary-white: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(to right, white 25%, #FDDFF0 25%); */
+}
+.rect{
+    background: var(--primary-white);
+    height: 100vh;
+    border-radius: 67px 0px 0px 67px;
+    margin-left: 20em;
+}
+
+
+.navbar{
+    padding: 20px;
+    margin-left: -16.5em;
+    margin-right: 5.5em;
+}
+.navbar-brand img {
+    height: 56px;
+    width: auto;
+}
+.nav-link {
+    padding: 14px;
+    color: var(--primary-black);
+}
+.nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+
+.con{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-left: -20em;
+}
+
+.left {
+margin-left: 2em;
+margin-top: 1em;
+}
+
+.right{
+    margin-left: -100px;
+    margin-top: 6em;
+}
+.signup h3{
+    margin-left: 1.7em;
+}
+form{
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 4.5em;
+}
+form input{
+    display: block;
+    padding-bottom: 0.5em;
+    margin: 2em;
+    width: 500px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: var(--primary-color);
+    outline: none;
+    background-color: transparent;
+}
+
+form input:hover {
+    border-color: var(--primary-color);
+}
+.password-container {
+    position: relative;
+}
+.password-container input {
+    color: var(--primary-black);
+}
+#togglePassword,#ConfirmtogglePassword{
+    position: absolute;
+    top: 50%;
+    right: 3em;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+form a{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 3em;
+    font-family: "Inter",sans-serif;
+    font-size: 12px;
+}
+
+
+.btn{
+    height: 2.5em;
+    width: calc(90% - 1px);
+    border-radius: 7px;
+    border: none;
+    background: var(--primary-color);
+    color:var(--primary-white);
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.btn:hover {
+    background-color: transparent;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    color:var(--primary-color);
+    font-weight: 500;
+
+
+}
+.btn:focus,
+.btn:active
+{
+    outline: none; 
+    box-shadow: none;
+}
+ 
+.logintext{
+    margin-left: 10em;
+}
+.logintext a{
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 5px;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+}
+.logintext a:hover{
+    color: var(--primary-black);
+}
+
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .rect {
+        margin-left: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .navbar {
+        margin: 0;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+
+    .con {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .left {
+        margin-left: 0;
+        margin-top: -2em;
+        text-align: center;
+    }
+
+    .left img {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .right {
+        margin: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    
+    .signup h3{
+        margin-left: 0em;
+        margin-top: 0em;
+        font-size: 30px;
+    }
+
+    form {
+        margin-right: 0em;
+        margin-left: 0em;
+        width: 120%;
+        margin-top: 1em;
+    }
+
+    form input{
+        margin: 0em;
+        width: 300px;
+        padding: 0.5em 0.2em;
+    }
+    
+    #togglePassword, #ConfirmtogglePassword {
+        right: 4em;
+    }
+
+    .btn {
+        width: 83%;
+        height: 2.5em;
+        margin-left: -3.5em;
+        margin-top: 1em;
+    }
+
+    .logintext {
+        text-align: left;
+        margin: 0.5em 0;
+    }
+    .logintext{
+        margin-left: 1em;
+    }
+
+
+}
+

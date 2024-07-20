@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Amenda Maria Johnson",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "CEO"
+    },
+    {
+        "name": "Amith Abey Stephen",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "CTO"
+    },
+    {
+        "name": "Angel K Agnes",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "CCO"
+    },
+    {
+        "name": "Alan Rajan",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "COO"
+    },
+    {
+        "name": "Anasuya S Kurup",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "CMO"
+    },
+    {
+        "name": "Sane Sunil",
+        "profile": "/images/team/hacker.jpeg",
+        "position": "CPO"
+    }
+]
