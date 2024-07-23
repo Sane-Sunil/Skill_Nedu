@@ -237,7 +237,9 @@ svg {
 .r h2{
     margin-bottom: 1em;
 }
-
+.pg2{
+    text-align: center;
+}
 
 
 #team-container {
@@ -260,7 +262,6 @@ svg {
 
 .team-member img {
     width: 15rem;
-    position: relative;
     border-top-left-radius: 5rem;
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 1rem;
