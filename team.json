@@ -1,17 +1,18 @@
 [
     {
         "name": "Amenda Maria Johnson",
-        "profile": "images/team/Amenda.png",
+        "profile": "images/team/Amenda (2).png",
         "position": "CEO"
+
     },
     {
         "name": "Amith Abey Stephen",
-        "profile": "images/team/Amith.png",
+        "profile": "images/team/Amith (2).png",
         "position": "CTO"
     },
     {
         "name": "Angel K Agnes",
-        "profile": "images/team/Angel.png",
+        "profile": "images/team/Angel (2).png",
         "position": "CCO"
     },
     {
@@ -21,7 +22,7 @@
     },
     {
         "name": "Anasuya S Kurup",
-        "profile": "/images/team/Anasuya.png",
+        "profile": "/images/team/Anasuya (2).png",
         "position": "CMO"
     },
     {

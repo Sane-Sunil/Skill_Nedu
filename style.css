@@ -150,7 +150,7 @@ width: auto;
 .c-a{
     text-decoration: none;
 }
-.c-a b, .c-a p{/*contents in card*/
+.c-a b, .c-a p{                 /*contents in card*/
     color: var(--primary-black);
 }
 .c-a h6{
@@ -257,15 +257,15 @@ svg {
     margin: 3rem;
     padding: 2rem;
     width: fit-content;
-    box-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.406);
+    box-shadow: 0.1rem 0.1rem var(--primary-color);
 }
 
 .team-member img {
     width: 15rem;
-    border-top-left-radius: 5rem;
+    /* border-top-left-radius: 5rem; */
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 5rem;
+    /* border-bottom-right-radius: 5rem; */
 }
 
 .team-member img:hover::before {
